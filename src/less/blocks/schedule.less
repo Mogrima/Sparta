@@ -1,16 +1,28 @@
 .schedule {
     display: flex;
+    background-image: url("../img/schedule-bg.png");
+    background-position: left top;
+    background-repeat: no-repeat;
 }
 
 .schedule__day {
+    margin-left: 10px;
+    margin-right: 53px;
+    padding-top: 8px;
     font-weight: 900;
     font-size: 14px;
     color: #1b1916;
     text-transform: uppercase;
+
+    &--last {
+        margin-right: 0;
+    }
 }
 
 .schedule__amount {
+    width: 80px;
     margin: 0;
+    margin-left: auto;
     font-weight: 300;
     font-size: 14px;
 }
