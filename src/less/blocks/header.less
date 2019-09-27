@@ -17,7 +17,10 @@
 
 .header__bottom {}
 
-.header__logo {}
+.header__logo {
+  width: 58px;
+  height: 58px;
+}
 
 .header__name {
   order: 1;
@@ -41,6 +44,31 @@
 @media (min-width: @tablet) {
   .header {
     background-image: url("../img/header/header-bg750.jpg");
+  }
+
+  .header__top {
+    margin-bottom: 155px;
+  }
+
+  .header__logo {
+    width: 160px;
+    
+    img {
+      width: 100%;
+    }
+  }
+
+  .header__name {
+    margin: 0 auto;
+  }
+
+  .header__tel {
+    order: 3;
+    margin-left: 0;
+  }
+
+  .header__button {
+    margin-top: 53px;
   }
 }
 

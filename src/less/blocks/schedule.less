@@ -1,5 +1,6 @@
 .schedule {
     display: flex;
+    align-items: center;
     background-image: url("../img/schedule-bg.png");
     background-position: left top;
     background-repeat: no-repeat;
@@ -25,4 +26,12 @@
     margin-left: auto;
     font-weight: 300;
     font-size: 14px;
+    line-height: 16px;
+}
+
+@media (min-width: @tablet) {
+    .schedule {
+        width: 315px;
+        margin: 0 auto;
+    }
 }
