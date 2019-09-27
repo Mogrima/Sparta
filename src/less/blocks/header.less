@@ -20,6 +20,10 @@
 .header__logo {
   width: 58px;
   height: 58px;
+
+  img {
+    width: 100%;
+  }
 }
 
 .header__name {
@@ -52,10 +56,6 @@
 
   .header__logo {
     width: 160px;
-    
-    img {
-      width: 100%;
-    }
   }
 
   .header__name {
@@ -75,5 +75,27 @@
 @media (min-width: @desktop) {
   .header {
     background-image: url("../img/header/header-bg1200.jpg");
+  }
+
+  .header__top {
+    padding-top: 20px;
+  }
+
+  .header__logo {
+    width: 247px;
+    height: 89px;
+  }
+
+  .header__name {
+    font-size: 18px;
+  }
+
+  .header__tel {
+    font-size: 24px;
+  }
+
+  .header__button {
+    margin-right: 0;
+    margin-left: 0;
   }
 }

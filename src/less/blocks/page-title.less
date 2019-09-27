@@ -1,29 +1,43 @@
 .page-title {
-    margin: 0;
-    text-align: center;
+  margin: 0;
+  text-align: center;
 }
 
 .page-title__top {
-    font-family: 'Besom';
-    font-size: 102px;
-    color: @title;
+  font-family: 'Besom';
+  font-size: 102px;
+  color: @title;
 }
 
 .page-title__bottom {
-    display: block;
-    margin-bottom: 35px;
-    padding-top: 20px;
-    font-weight: 900;
-    font-size: 38px;
+  display: block;
+  margin-bottom: 35px;
+  padding-top: 20px;
+  font-weight: 900;
+  font-size: 38px;
 }
 
 @media (min-width: @tablet) {
-    .page-title__top {
-        font-weight: normal;
-        font-size: 107px;
-    }
+  .page-title__top {
+    font-weight: normal;
+    font-size: 107px;
+  }
 
-    .page-title__bottom {
-        font-size: 40px;
-    }
+  .page-title__bottom {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .page-title {
+    text-align: left;
+  }
+
+  .page-title__top {
+    font-size: 180px;
+  }
+
+  .page-title__bottom {
+    font-size: 68px;
+  }
 }
