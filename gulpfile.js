@@ -51,6 +51,12 @@ gulp.task('less', function () {
         .pipe(browserSync.stream());
 });
 
+gulp.task('normalize', function() {
+    return gulp.src('./src/css/normalize.css')
+    .pipe(gulp.dest('./dist/css/'))
+    .pipe(browserSync.stream());
+});
+
 gulp.task('copy:js', function() {
     return gulp.src('./src/js/**/*.*')
     .pipe(gulp.dest('./dist/js/'))
@@ -72,7 +78,7 @@ gulp.task('copy:fonts', function() {
 gulp.task('default', function(callback) {
     runSequence(
         'clean:dist',
-        ['less', 'html', 'copy:js', 'copy:img', 'copy:fonts'],
+        ['less', 'normalize', 'html', 'copy:js', 'copy:img', 'copy:fonts'],
         'serve',
         callback
     );
